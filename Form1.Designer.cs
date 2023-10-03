@@ -48,6 +48,8 @@ namespace aaaa
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -190,6 +192,7 @@ namespace aaaa
             this.label7.Size = new System.Drawing.Size(59, 22);
             this.label7.TabIndex = 13;
             this.label7.Text = "Бомж";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button5
             // 
@@ -208,6 +211,7 @@ namespace aaaa
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 16;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label8
             // 
@@ -220,13 +224,35 @@ namespace aaaa
             this.label8.TabIndex = 17;
             this.label8.Text = "РУБЛЕЙ";
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(53, 322);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(191, 37);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "ВКЛЮЧИТЬ МОРГЕНА";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(373, 322);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(213, 41);
+            this.button7.TabIndex = 19;
+            this.button7.Text = "ВЫКЛЮЧИТЬ МОРГЕНА (НЕ СОВЕТУЮ)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Crimson;
+            this.BackColor = System.Drawing.Color.LightPink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(628, 375);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
@@ -241,6 +267,7 @@ namespace aaaa
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -268,6 +295,8 @@ namespace aaaa
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
